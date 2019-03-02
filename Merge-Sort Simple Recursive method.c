@@ -28,8 +28,7 @@ void sort(int start , int end , int arr1[])
 
         int mid = (start + end) / 2 ;
         sort(start,mid,arr1);//Important Recursion to Break the Array
-        sort(start,mid,arr1);//Important Recursion to Break the Array
-        sort(mid+1,end,arr1);
+        sort(mid+1,end,arr1);//Important Recursion to Break the Array
         merge(start,mid,mid+1,end,arr1);
 
 }
